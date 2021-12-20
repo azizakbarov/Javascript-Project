@@ -1,62 +1,48 @@
-// for (let i = 0; i < 5; i++) {
-//   console.log("in loop:", i);
-// }
+// const speak = function (name, time) {
+//   console.log(`Good ${time} ${name}`);
+// };
 
-// const names = ["Jahongir", "Aziz", "Otabek"];
+// speak("Aziz", "morning");
 
-// for (let i = 0; i < names.length; i++) {
-//   console.log(names[i]);
-// }
+// // const calcArea = function (radius) {
+// //   return 3.14 * radius ** 2;
+// // };
 
-// const ninjas = ["a", "b", "c", "d"];
+// const calcArea = (radius) => {
+//   return 3.14 * radius ** 2;
+// };
 
-// if (ninjas.length > 3) {
-//   console.log(" there are many ninjas ");
-// }
+// const area = calcArea(5);
+// console.log("area is:", area);
 
-// const password = "pass";
-
-// if (password.length >= 8) {
-//   console.log("your password is long enough");
-// } else {
-//   console.log(" Your password must contain at least 8 characters");
-// }
-
-// const scores = [10, 20, 30, 0, 40, 100, 80, 70];
-
-// for (let i = 0; i < scores.length; i++) {
-//   if (scores[i] === 0) {
-//     console.log("What a lame score you have");
-//     continue;
+// const bill = (products, tax) => {
+//   let total = 0;
+//   for (let i = 0; i < products.length; i++) {
+//     total += products[i] + products[i] * tax;
 //   }
+//   return total;
+// };
 
-//   console.log("Your score is:", scores[i]);
+// console.log(bill([10, 15, 30], 0.2));
 
-//   if (scores[i] === 100) {
-//     console.log(" You nerd reached the top score");
-//     break;
-//   }
-// }
-// const grade = "E";
+// const name = "Aziz";
 
-// switch (grade) {
-//   case "A":
-//     console.log("You got an A");
-//     break;
-//   case "B":
-//     console.log("You got an B");
-//     break;
-//   case "C":
-//     console.log("You got an C");
-//     break;
-//   case "D":
-//     console.log("You got an D");
-//     break;
-//   case "F":
-//     console.log("You got an F");
-//     break;
-//   default:
-//     console.log("You did not attend the exam absentee");
-// }
+// const greet = () => "hello";
+// let resultOne = greet();
+// console.log(resultOne);
 
+// let resultTwo = name.toUpperCase();
+// console.log(resultTwo);
 
+// Math Object
+
+console.log(Math);
+console.log(Math.PI);
+
+const area = 7.7;
+console.log(Math.round(area));
+
+//Random Number 
+
+const random = Math.random();
+console.log(random)
