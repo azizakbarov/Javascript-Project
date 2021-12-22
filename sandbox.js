@@ -1,8 +1,14 @@
-const para = document.querySelector("p");
+// const button = document.querySelector("button");
 
-const paras = document.querySelectorAll("p");
+// button.addEventListener("click", () => {
+//   console.log("You clicked me!");
+// });
 
-paras.forEach((para) => {
-  para.innerText += "new text";
-  console.log(para.innerText);
+const items = document.querySelectorAll("li");
+
+items.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    // console.log("item clicked");
+    e.target.style.textDecoration = "line-through";
+  });
 });
