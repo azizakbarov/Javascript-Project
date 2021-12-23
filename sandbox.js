@@ -1,12 +1,6 @@
-const copy = document.querySelector(".copy-me");
+const form = document.querySelector(".signup-form");
 
-copy.addEventListener("copy", () => {
-  console.log("OI! My content is a copyright!");
-});
-
-const box = document.querySelector(".box");
-
-box.addEventListener("mousemove", (e) => {
-  //console.log(e)
-  box.textContent = ` x pos - ${e.offsetX}  y pos - ${e.offsetY}`;
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  console.log(form.username.value);
 });

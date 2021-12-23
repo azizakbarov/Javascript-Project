@@ -6,20 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JavaScript</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: #eee;
+        }
+
+        form {
+            max-width: 200px;
+            margin: 40px auto;
+            background: white;
+            padding: 10px;
+        }
+
+        input {
+            display: block;
+            margin: 10px auto;
+            padding: 4px;
+        }
+    </style>
 </head>
 
 <body>
-    <button>click me </button>
-    <div class="popup-wrapper">
-        <div class="popup">
-            <div class="popup-close">x</div>
-            <div class="popup-content">
-                <h2>NINJAS SALE!</h2>
-                <p>50% off of all the ninja clothing, don't miss out!</p>
-                <a href="#">view clothing</a>
-            </div>
-        </div>
-    </div>
+    <form action="" class="signup-form">
+        <input type="text" id="username" placeholder="username">
+        <input type="submit" value="submit">
+    </form>
 
 
     <script src="sandbox.js"></script>
