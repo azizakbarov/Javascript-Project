@@ -16,12 +16,21 @@ button.addEventListener("click", () => {
   ul.prepend(li);
 });
 
-const items = document.querySelectorAll("li");
+// const items = document.querySelectorAll("li");
 
-items.forEach((item) => {
-  item.addEventListener("click", (e) => {
-    // console.log("item clicked");
-    // e.target.style.textDecoration = "line-through";
+// items.forEach((item) => {
+//   item.addEventListener("click", (e) => {
+//     // console.log("item clicked");
+//     // e.target.style.textDecoration = "line-through";
+//     e.stopPropagation();
+//     e.target.remove();
+//   });
+// });
+
+ul.addEventListener("click", (e) => {
+  // console.log("Event in UL ")
+  //   console.log(e.target);
+  if (e.target.tagName === "LI") {
     e.target.remove();
-  });
+  }
 });
