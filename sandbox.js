@@ -1,13 +1,16 @@
-const products = [
-  { name: "gold star", price: 30 },
-  { name: "green shell", price: 40 },
-  { name: "red shell", price: 10 },
-  { name: "banana", price: 5 },
-  { name: "apple", price: 50 },
-];
+const clock = document.querySelector(".clock");
 
-const promos = products
-  .filter((product) => product.price > 20)
-  .map((product) => `the ${product.name} is ${product.price}pounds`);
+const tick = () => {
+  const now = new Date();
 
-console.log(promos);
+  const h = now.getHours();
+  const m = now.getMinutes();
+  const s = now.getSeconds();
+
+  const html = `<span>${h}</span> : 
+  <span>${m}</span> : 
+   <span>${s}</span>`
+  clock.innerHTML = html;
+};
+
+setInterval(tick, 1000);
